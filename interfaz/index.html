@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="main__container">
+        <section class="container__form">
+            <p>Nombre completo</p>
+            <input type="text" placeholder="Nombre y apellido" required>
+            <p>Email</p>
+            <input type="email" required placeholder="pep@gmail.com">
+            <p>Contraseña</p>
+            <input type="password" required placeholder="xxxxx">
+            <p>Confirmar contraseña</p>
+            <input type="password" required placeholder="xxxxx">
+            <button>Subir perfil</button>
+        </section>
+        <section class="container__tareas">
+            <svg width="120" height="120" viewBox="0 0 120 120">
+                <circle cx="60" cy="60" r="50" stroke="red" stroke-width="5" fill="none" stroke-dasharray="314" stroke-dashoffset="314" class="animated-circle"/>
+                <text x="60" y="65" text-anchor="middle" font-size="16" fill="white">80%</text>
+            </svg>
+            <p>Profile Completeness</p>
+            <div class="tareas__list">
+                <ul class="list__tareas">
+                    <li class="item__tareas tarea__confirm">Crear cuenta</li>
+                    <li class="item__tareas tarea__confirm">Agregar información</li>
+                    <li class="item__tareas tarea__confirm">Subir foto</li>
+                    <li class="item__tareas">Completar preferencias</li>
+                    <li class="item__tareas">Verificar email</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

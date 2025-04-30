@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #0E0909; /* Negro profundo */
+    color: #BDC3C7; /* Gris claro */
+}
+
+p {
+    color: aliceblue;
+    font-size: 1.2rem;
+    margin-bottom: 4px;
+}
+
+.main__container {
+    background-color: #2C3E50; /* Gris oscuro */
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #E67E22; /* Sombra anaranjada */
+}
+
+.container__form {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container__form input {
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 0 10px #ccc;
+    padding: 6px;
+}
+
+.container__form button {
+    border-radius: 20px;
+    border: none;
+    background-color: #E67E22; /* Anaranjado vibrante */
+    color: #0E0909; /* Negro profundo */
+    padding: 10px;
+    transition: background-color 0.5s ease, transform 0.3s ease;
+}
+
+.container__form button:hover {
+    background-color: #FF9F45; /* Tono más claro de anaranjado */
+    transform: scale(1.05);
+}
+
+.container__tareas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.list__tareas {
+    background-color: #2C3E50; /* Gris oscuro */
+    padding: 20px;
+    border-radius: 10px;
+    color: aliceblue;
+}
+
+.tarea__confirm {
+    color: rgba(234, 236, 238, 0.384);
+}
+
+/* Animación mejorada del círculo */
+.animated-circle {
+    animation: drawCircle 2s linear forwards;
+}
+
+@keyframes drawCircle {
+    0% {
+        stroke-dashoffset: 314; /* Oculta el círculo */
+        stroke: #E67E22; /* Anaranjado */
+    }
+    100% {
+        stroke-dashoffset: 30; /* Se dibuja completamente */
+        stroke: #FF9F45; /* Tono más claro */
+    }
+}
+
+.list__tareas {
+    margin-top: 20px;
+    background-color: #1E1E1E; /* Un fondo oscuro para contraste */
+    padding: 20px;
+    border-radius: 10px;
+    color: aliceblue;
+    list-style: none;
+    
+}
+
+.tarea__confirm {
+    text-decoration: line-through;
+    color: #FF9F45; /* Un tono más vibrante de anaranjado */
+}
